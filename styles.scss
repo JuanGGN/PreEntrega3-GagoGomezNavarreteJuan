@@ -1,0 +1,106 @@
+$color_1: #4b4c4d;
+$color_2: inherit;
+$color_3: #aaa;
+$background-color_1: #ffffff;
+$background-color_2: #ccc;
+
+.container-fluid {
+    display: flex;
+    text-align: center;
+}
+.footer-basic {
+    padding: 40px 0;
+    background-color: $background-color_1;
+    color: $color_1;
+    ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+        a {
+            color: $color_2;
+            text-decoration: none;
+            opacity: 0.8;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    li {
+        padding: 0 10px;
+    }
+    .social {
+        text-align: center;
+        padding-bottom: 25px;
+        >a {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            margin: 0 8px;
+            color: $color_2;
+            opacity: 0.75;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+    .copyright {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: $color_3;
+        margin-bottom: 0;
+    }
+}
+.flexbox-container {
+    display: flex;
+}
+.seccion1 {
+    .seccion2 {
+        justify-content: space-between;
+    }
+}
+.col {
+    display: flex;
+    justify-content: center;
+}
+.text {
+    text-align: center;
+}
+.parent-contact {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+form {
+    padding-top: 20px;
+}
+.title {
+    display: inline-block;
+    padding-left: 195px;
+}
+.parent.vinos {
+    display: flex;
+    align-items: center;
+}
+.parent-store {
+    display: flex;
+    justify-content: row;
+    text-align: center;
+}
+
+
+
+.navbar-toggler-icon {
+	background-color: $background-color_2;
+}
